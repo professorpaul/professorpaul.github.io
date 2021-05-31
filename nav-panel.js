@@ -47,14 +47,14 @@ function buildNavPanel() {
 
     $('body').append(button);
 
-    button.on("click",function(){
+    button.on("click", function(){
 
         $("#nav-panel").toggle();
     });
 
-    navPanel.on("click", function(){
+    navPanel.on("click", "a", function(){
 
-        //TODO: bubble so if any links are clicked, the navpanel toggles.
+        $("#nav-panel").toggle();
     });
 
 }
