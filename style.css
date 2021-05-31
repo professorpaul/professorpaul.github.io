@@ -14,6 +14,7 @@ h2,h3,h4{
 .container{
     max-width:35rem;
     margin-bottom:100px;
+    position:relative;
 }
 blockquote{
     margin-left: 1rem;
@@ -60,4 +61,12 @@ nav{
     position:fixed;
     bottom:0.75rem;
     left:1.5rem;
+    font-size:0.75rem;
 }
+.para-num{
+    font-family:monospace;
+    position:absolute;
+    left:-2em;
+    color:gray;
+    font-size:smaller;
+  }
