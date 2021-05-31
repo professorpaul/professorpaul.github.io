@@ -12,7 +12,7 @@ h2,h3,h4{
     padding-top:2rem;
 }
 .container{
-    max-width:40rem;
+    max-width:35rem;
     margin-bottom:100px;
 }
 blockquote{
@@ -37,4 +37,27 @@ th,td{
 
 nav{
     margin-bottom:2rem;
+}
+
+#nav-panel{
+    width:80%;
+    max-width:20rem;
+    overflow:scroll;
+    font-size:0.8rem;
+     position:fixed;
+     height:100%;
+     top:0px;
+     left:0px;
+    background-color:white;
+    color:gray;
+    padding:5px;
+    filter:drop-shadow(0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 0.5));
+    padding-bottom:5rem;
+    display:none;
+}
+
+#outline-btn{
+    position:fixed;
+    bottom:0.75rem;
+    left:1.5rem;
 }

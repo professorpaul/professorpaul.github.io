@@ -35,15 +35,9 @@ function buildNavPanel() {
 
     });
 
-    navPanel.css({ "max-width": "20rem", "overflow": "scroll", "font-size": "0.8rem", "position": "fixed", "height": "100%", "border-right": "solid 1px black", "top": "0px", "left": "0px", "background-color": "white", "color": "gray", "padding": "5px", "filter": "drop-shadow(0.4rem 0.4rem 0.45rem rgba(0, 0, 30, 0.5))","padding-bottom":"5rem"})
     $("body").append(navPanel);
 
-
-    //Make button
-
-    var button = $("<button class='btn btn-primary' type='submit'>Outline</button>");
-
-    button.css({ "position": "fixed", "bottom": "5px", "left": "5px" });
+    var button = $("<button class='btn btn-primary' type='submit' id='outline-btn'>Outline</button>");
 
     $('body').append(button);
 
