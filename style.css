@@ -8,3 +8,8 @@ margin-bottom:3rem;
 .container{
     max-width:40rem;
 }
+blockquote{
+    margin-left: 1rem;
+    background-color:lightgray;
+    padding:1rem;
+}
