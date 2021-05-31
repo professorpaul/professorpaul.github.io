@@ -20,7 +20,7 @@ blockquote{
     padding:1rem;
 }
 
-#cr-toc{
+.toc{
     padding-top:4rem;
     padding-bottom:4rem;
 }
@@ -32,4 +32,8 @@ table{
 th,td{
     background-color: #e5e5e5;
     border:2px solid white;
+}
+
+nav{
+    margin-bottom:2rem;
 }
