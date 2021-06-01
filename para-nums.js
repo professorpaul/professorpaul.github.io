@@ -1,6 +1,6 @@
 function makeParaNums() {
 
-    var mystuff = $(".container").children("p");
+    var mystuff = $(".container").children("p, blockquote");
 
     mystuff.each(function (index) {
 
