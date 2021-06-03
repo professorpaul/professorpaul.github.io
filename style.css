@@ -26,6 +26,7 @@ blockquote{
 .toc{
     padding-top:2rem;
     padding-bottom:2rem;
+    text-align:center;
 }
 table{
     margin-bottom:2rem;
