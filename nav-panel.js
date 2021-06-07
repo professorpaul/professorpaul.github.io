@@ -41,14 +41,41 @@ function buildNavPanel() {
 
     $('body').append(button);
 
-    button.on("click", function(){
+    button.on("click", function () {
 
         $("#nav-panel").toggle();
     });
 
-    navPanel.on("click", "a", function(){
+    navPanel.on("click", "a", function () {
 
         $("#nav-panel").toggle();
     });
 
+
+    $(window).scroll(function () {
+
+        var scrollY = $('html').scrollTop();
+
+        $("#nav-panel").children().each(function (index) {
+
+            var entryOffset = $(this).offset().top;
+
+            console.log(entryOffset);
+
+            if (entryOffset < scrollY) {
+                //the heading is above the viewport
+                $(this).css("background-color", "white");
+            }
+            else if (entryOffset > scrollY + window.innerHeight) {
+                //the heading is below the viewport
+                $(this).css("background-color", "white");
+            }
+            else {
+                $(this).css("background-color", "lightgray");
+            }
+
+
+        });
+
+    });
 }
