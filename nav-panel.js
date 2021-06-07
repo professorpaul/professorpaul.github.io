@@ -6,11 +6,13 @@ function buildNavPanel() {
 
     headingList.each(function (index) {
 
-        var anchorName = "navTOC" + index;
+        var anchorName = "TOC" + index;
 
         $(this).attr('id', anchorName);
 
         var newItem = $("<p><a href='#" + anchorName + "'>" + $(this).html() + "</a></p>");
+
+        newItem.attr('id', "navTOC" + index);
 
         if ($(this).prop("tagName") == "H1") {
             newItem.css("padding-left", "1rem");
@@ -60,7 +62,9 @@ function buildNavPanel() {
 
         $("#nav-panel").children().each(function (index) {
 
-            var entryOffset = $(this).offset().top;
+            var IDNeeded = $(this).attr("id").slice(3);
+            
+            var entryOffset = $("#" + IDNeeded).offset().top;
 
             console.log(entryOffset);
 
@@ -73,7 +77,7 @@ function buildNavPanel() {
                 $(this).css("background-color", "white");
             }
             else {
-                $(this).css("background-color", "lightgray");
+                $(this).css("background-color", "#e5e5e5");
             }
 
 

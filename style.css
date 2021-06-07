@@ -59,6 +59,10 @@ nav{
     display:none;
 }
 
+#nav-panel>p{
+    border-radius:3px;
+}
+
 #outline-btn{
     position:fixed;
     bottom:0.75rem;
