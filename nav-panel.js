@@ -54,6 +54,8 @@ function buildNavPanel() {
 
     $(window).scroll(function () {
 
+        //TODO: I know what I'm doing wrong here. What I should be doing is not cyclying through the headings on the nav panel, but rather cycling through the headings in the main body. Then I need to somehow match em up
+
         var scrollY = $('html').scrollTop();
 
         $("#nav-panel").children().each(function (index) {
